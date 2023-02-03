@@ -13,3 +13,5 @@ jobs:
       - run: bats -v
       - run: npm install -g spectacle-docs 
       - run: spectacle -V
+      - name: Update PATH with binaries installed in tool cache
+        run: python --version
